@@ -5,7 +5,7 @@
 ## 自我介绍:
 **Sheath Unblocker**: 一只基于**Winform(.Net Core)**的Windows外来文件解锁定工具
 
-适用平台: **Windows10**
+适用平台: **Windows**
 
 ## 注意事项:
 1. Sheath-Unblocker仍处于开发阶段，但每个正式版发布前会尽量确保其稳定可用
