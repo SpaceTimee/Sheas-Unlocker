@@ -3,7 +3,7 @@
 </br>
 
 ## 自我介绍:
-**Sheath Unblocker**: 一只基于**Winform(.Net Core)**的Windows外来文件解锁定工具
+**Sheath Unblocker**: 一只基于**Winform(.Net Core)** 的Windows外来文件解锁定工具
 
 适用平台: **Windows**
 
