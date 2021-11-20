@@ -1,5 +1,5 @@
 ﻿
-namespace Sheath_Unblocker
+namespace Sheas_Unlocker
 {
     partial class MainForm
     {
@@ -29,24 +29,24 @@ namespace Sheath_Unblocker
         /// </summary>
         private void InitializeComponent()
         {
-            this.UnblockButton = new System.Windows.Forms.Button();
+            this.UnlockButton = new System.Windows.Forms.Button();
             this.PathTextBox = new System.Windows.Forms.TextBox();
             this.NavigateButton = new System.Windows.Forms.Button();
             this.RecurseCheckBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
-            // UnblockButton
+            // UnlockButton
             // 
-            this.UnblockButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.UnblockButton.ForeColor = System.Drawing.Color.Black;
-            this.UnblockButton.Location = new System.Drawing.Point(633, 12);
-            this.UnblockButton.Margin = new System.Windows.Forms.Padding(0);
-            this.UnblockButton.Name = "UnblockButton";
-            this.UnblockButton.Size = new System.Drawing.Size(150, 46);
-            this.UnblockButton.TabIndex = 2;
-            this.UnblockButton.Text = "解锁";
-            this.UnblockButton.UseVisualStyleBackColor = true;
-            this.UnblockButton.Click += new System.EventHandler(this.UnblockButton_Click);
+            this.UnlockButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.UnlockButton.ForeColor = System.Drawing.Color.Black;
+            this.UnlockButton.Location = new System.Drawing.Point(633, 12);
+            this.UnlockButton.Margin = new System.Windows.Forms.Padding(0);
+            this.UnlockButton.Name = "UnlockButton";
+            this.UnlockButton.Size = new System.Drawing.Size(150, 46);
+            this.UnlockButton.TabIndex = 2;
+            this.UnlockButton.Text = "解锁";
+            this.UnlockButton.UseVisualStyleBackColor = true;
+            this.UnlockButton.Click += new System.EventHandler(this.UnlockButton_Click);
             // 
             // PathTextBox
             // 
@@ -88,7 +88,7 @@ namespace Sheath_Unblocker
             // 
             // MainForm
             // 
-            this.AcceptButton = this.UnblockButton;
+            this.AcceptButton = this.UnlockButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
@@ -96,7 +96,7 @@ namespace Sheath_Unblocker
             this.Controls.Add(this.RecurseCheckBox);
             this.Controls.Add(this.NavigateButton);
             this.Controls.Add(this.PathTextBox);
-            this.Controls.Add(this.UnblockButton);
+            this.Controls.Add(this.UnlockButton);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Black;
             this.MaximizeBox = false;
@@ -104,7 +104,7 @@ namespace Sheath_Unblocker
             this.Name = "MainForm";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Sheath Unblocker";
+            this.Text = "Sheas Unlocker";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,7 +112,7 @@ namespace Sheath_Unblocker
 
         #endregion
 
-        private System.Windows.Forms.Button UnblockButton;
+        private System.Windows.Forms.Button UnlockButton;
         private System.Windows.Forms.TextBox PathTextBox;
         private System.Windows.Forms.Button NavigateButton;
         private System.Windows.Forms.CheckBox RecurseCheckBox;

@@ -1,8 +1,8 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Windows.Forms;
+using SheasCore;
 
-namespace Sheath_Unblocker
+namespace Sheas_Unlocker
 {
     public partial class MainForm : Form
     {
@@ -11,32 +11,21 @@ namespace Sheath_Unblocker
             InitializeComponent();
         }
 
-        private void UnblockButton_Click(object sender, EventArgs e)
+        private void UnlockButton_Click(object sender, EventArgs e)
         {
             if (System.IO.Directory.Exists(PathTextBox.Text))
                 Text = "解锁中...";
             else
+            {
                 Text = "文件路径错误";
+                return;
+            }
 
-            Process unblockProcess = new System.Diagnostics.Process();
-
-            #region 配置unblockProcess的参数
-            unblockProcess.StartInfo.FileName = "cmd.exe";
-            unblockProcess.StartInfo.Arguments = RecurseCheckBox.Checked ?
-                @"/c cd /d """ + PathTextBox.Text + @""" && powershell -command ""Get-ChildItem -Recurse | Unblock-File""" :
-                @"/c cd /d """ + PathTextBox.Text + @""" && powershell -command ""Get-ChildItem | Unblock-File""";
-            unblockProcess.StartInfo.CreateNoWindow = true; //不显示程序窗口 
-            unblockProcess.StartInfo.UseShellExecute = false;
-            unblockProcess.StartInfo.RedirectStandardInput = true;  //接受调用程序的输入信息 
-            unblockProcess.StartInfo.RedirectStandardOutput = true; //由调用程序获取输出信息 
-            //unblockProcess.StartInfo.StandardOutputEncoding = Encoding.UTF8;
-            #endregion
-
-            unblockProcess.Start();
-            unblockProcess.WaitForExit(60 * 1000);
-            System.IO.StreamReader streamReader = unblockProcess.StandardOutput;
-            string feedBack = streamReader.ReadToEnd();
-            unblockProcess.Close();
+            string feedBack = "未知错误";
+            if (RecurseCheckBox.Checked)
+                feedBack = PowerShell.PowerShellRun(PathTextBox.Text, @"Get-ChildItem -Recurse | Unblock-File");
+            else
+                feedBack = PowerShell.PowerShellRun(PathTextBox.Text, @"Get-ChildItem | Unblock-File");
 
             if (feedBack == "")
                 Text = "解锁成功";
@@ -54,9 +43,7 @@ namespace Sheath_Unblocker
             #endregion
 
             if (folderBrowserDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
                 PathTextBox.Text = folderBrowserDialog.SelectedPath; //路径
-            }
         }
     }
 }

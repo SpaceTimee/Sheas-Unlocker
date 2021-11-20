@@ -1,7 +1,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace Sheath_Unblocker
+namespace Sheas_Unlocker
 {
     internal static class Program
     {

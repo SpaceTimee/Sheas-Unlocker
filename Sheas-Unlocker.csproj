@@ -3,12 +3,12 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
-    <RootNamespace>Sheath_Unblocker</RootNamespace>
+    <RootNamespace>Sheas_Unlocker</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Authors>Space Time</Authors>
-    <Product>Sheath Unblocker</Product>
-    <Description>Just Let Me Unblock Ur Files</Description>
+    <Product>Sheas Unlocker</Product>
+    <Description>Just Unlocker</Description>
     <Copyright>Copyright ©  2077</Copyright>
     <SignAssembly>false</SignAssembly>
     <DelaySign>false</DelaySign>
@@ -21,5 +21,11 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Sheas Core">
+      <HintPath>C:\Users\Space Time\Desktop\Sheas Core\bin\Release\Sheas Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 
 </Project>
