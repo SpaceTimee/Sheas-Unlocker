@@ -5,13 +5,17 @@
     <TargetFramework>net5.0-windows</TargetFramework>
     <RootNamespace>Sheas_Unlocker</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
-    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Authors>Space Time</Authors>
     <Product>Sheas Unlocker</Product>
-    <Description>Just Unlocker</Description>
-    <Copyright>Copyright ©  2077</Copyright>
+    <Description></Description>
+    <Copyright></Copyright>
     <SignAssembly>false</SignAssembly>
     <DelaySign>false</DelaySign>
+    <ApplicationIcon>Sheas Unlocker Logo.ico</ApplicationIcon>
+    <Version>0</Version>
+    <Company />
+    <PackageId>SpaceTime.Sheas.Unlocker</PackageId>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
