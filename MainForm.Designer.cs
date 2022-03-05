@@ -30,16 +30,17 @@ namespace Sheas_Unlocker
         private void InitializeComponent()
         {
             this.UnlockButton = new System.Windows.Forms.Button();
-            this.PathTextBox = new System.Windows.Forms.TextBox();
+            this.PathBox = new System.Windows.Forms.TextBox();
             this.NavigateButton = new System.Windows.Forms.Button();
             this.RecurseCheckBox = new System.Windows.Forms.CheckBox();
+            this.IgnoreCheckBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // UnlockButton
             // 
             this.UnlockButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.UnlockButton.ForeColor = System.Drawing.Color.Black;
-            this.UnlockButton.Location = new System.Drawing.Point(633, 12);
+            this.UnlockButton.Location = new System.Drawing.Point(634, 12);
             this.UnlockButton.Margin = new System.Windows.Forms.Padding(0);
             this.UnlockButton.Name = "UnlockButton";
             this.UnlockButton.Size = new System.Drawing.Size(150, 46);
@@ -48,24 +49,23 @@ namespace Sheas_Unlocker
             this.UnlockButton.UseVisualStyleBackColor = true;
             this.UnlockButton.Click += new System.EventHandler(this.UnlockButton_Click);
             // 
-            // PathTextBox
+            // PathBox
             // 
-            this.PathTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.PathTextBox.BackColor = System.Drawing.Color.White;
-            this.PathTextBox.ForeColor = System.Drawing.Color.Black;
-            this.PathTextBox.Location = new System.Drawing.Point(16, 16);
-            this.PathTextBox.Margin = new System.Windows.Forms.Padding(0);
-            this.PathTextBox.MaxLength = 260;
-            this.PathTextBox.Name = "PathTextBox";
-            this.PathTextBox.ReadOnly = true;
-            this.PathTextBox.Size = new System.Drawing.Size(437, 38);
-            this.PathTextBox.TabIndex = 0;
+            this.PathBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.PathBox.BackColor = System.Drawing.Color.White;
+            this.PathBox.ForeColor = System.Drawing.Color.Black;
+            this.PathBox.Location = new System.Drawing.Point(16, 16);
+            this.PathBox.Margin = new System.Windows.Forms.Padding(0);
+            this.PathBox.MaxLength = 260;
+            this.PathBox.Name = "PathBox";
+            this.PathBox.Size = new System.Drawing.Size(438, 38);
+            this.PathBox.TabIndex = 0;
             // 
             // NavigateButton
             // 
             this.NavigateButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.NavigateButton.ForeColor = System.Drawing.Color.Black;
-            this.NavigateButton.Location = new System.Drawing.Point(468, 12);
+            this.NavigateButton.Location = new System.Drawing.Point(469, 12);
             this.NavigateButton.Margin = new System.Windows.Forms.Padding(0);
             this.NavigateButton.Name = "NavigateButton";
             this.NavigateButton.Size = new System.Drawing.Size(150, 46);
@@ -78,7 +78,7 @@ namespace Sheas_Unlocker
             // 
             this.RecurseCheckBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.RecurseCheckBox.AutoSize = true;
-            this.RecurseCheckBox.Location = new System.Drawing.Point(798, 18);
+            this.RecurseCheckBox.Location = new System.Drawing.Point(799, 18);
             this.RecurseCheckBox.Margin = new System.Windows.Forms.Padding(0);
             this.RecurseCheckBox.Name = "RecurseCheckBox";
             this.RecurseCheckBox.Size = new System.Drawing.Size(166, 35);
@@ -86,16 +86,29 @@ namespace Sheas_Unlocker
             this.RecurseCheckBox.Text = "遍历子目录";
             this.RecurseCheckBox.UseVisualStyleBackColor = true;
             // 
+            // IgnoreCheckBox
+            // 
+            this.IgnoreCheckBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.IgnoreCheckBox.AutoSize = true;
+            this.IgnoreCheckBox.Location = new System.Drawing.Point(969, 18);
+            this.IgnoreCheckBox.Margin = new System.Windows.Forms.Padding(0);
+            this.IgnoreCheckBox.Name = "IgnoreCheckBox";
+            this.IgnoreCheckBox.Size = new System.Drawing.Size(142, 35);
+            this.IgnoreCheckBox.TabIndex = 4;
+            this.IgnoreCheckBox.Text = "禁用报错";
+            this.IgnoreCheckBox.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AcceptButton = this.UnlockButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(979, 69);
+            this.ClientSize = new System.Drawing.Size(1117, 69);
+            this.Controls.Add(this.IgnoreCheckBox);
             this.Controls.Add(this.RecurseCheckBox);
             this.Controls.Add(this.NavigateButton);
-            this.Controls.Add(this.PathTextBox);
+            this.Controls.Add(this.PathBox);
             this.Controls.Add(this.UnlockButton);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Black;
@@ -113,9 +126,10 @@ namespace Sheas_Unlocker
         #endregion
 
         private System.Windows.Forms.Button UnlockButton;
-        private System.Windows.Forms.TextBox PathTextBox;
+        private System.Windows.Forms.TextBox PathBox;
         private System.Windows.Forms.Button NavigateButton;
         private System.Windows.Forms.CheckBox RecurseCheckBox;
+        internal System.Windows.Forms.CheckBox IgnoreCheckBox;
     }
 }
 

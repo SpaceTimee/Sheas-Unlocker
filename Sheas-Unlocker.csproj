@@ -2,29 +2,48 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net5.0-windows10.0.22000.0</TargetFramework>
     <RootNamespace>Sheas_Unlocker</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Authors>Space Time</Authors>
     <Product>Sheas Unlocker</Product>
-    <Description></Description>
-    <Copyright></Copyright>
+    <Description>Just Unlocker</Description>
+    <Copyright>Copyright ©  2077</Copyright>
     <SignAssembly>false</SignAssembly>
     <DelaySign>false</DelaySign>
     <ApplicationIcon>Sheas Unlocker Logo.ico</ApplicationIcon>
     <Version>0</Version>
     <Company />
     <PackageId>SpaceTime.Sheas.Unlocker</PackageId>
+    <FileVersion>1.0.1</FileVersion>
+    <AssemblyVersion>1.0.1</AssemblyVersion>
+    <PackageReleaseNotes>Just Unlocker</PackageReleaseNotes>
+    <PackageTags>tool;unlocker;sheas</PackageTags>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/SpaceTimee/Sheas-Unlocker</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/SpaceTimee/Sheas-Unlocker</PackageProjectUrl>
+    <PackageIcon>Sheas Unlocker Logo 384x384.png</PackageIcon>
+    <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove=".gitattributes" />
+    <None Remove=".gitignore" />
+    <None Remove="README.md" />
+    <None Remove="Sheas Unlocker Logo.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <Reference Include="Sheas Core">

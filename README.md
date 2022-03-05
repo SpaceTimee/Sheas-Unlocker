@@ -3,22 +3,24 @@
 </br>
 
 ## 自我介绍:
-**Sheas Unlocker**: 一只基于**Winform(.Net5)** 的Windows外来文件解锁定工具
+**Sheas Unlocker**: 一只基于**Winform (.Net5)** 的 Windows 外来文件解锁定工具
 
 适用平台: **Windows**
 
 ## 注意事项:
-1. Sheas Unlocker仍处于开发阶段，但每个正式版发布前会尽量确保其稳定可用
-2. Github Release中会保留目前能够使用的所有版本，但强烈推荐使用最新版
+1. 为避免不必要的麻烦，食用前请先阅读注意事项和用户协议
+2. Sheas Unlocker 仍处于开发阶段，但每个正式版发布前会尽量确保其稳定可用
+3. Github Release 中会保留目前能够使用的所有版本，但强烈推荐使用最新版
 
 ## 用户协议:
-暂无
+1. [隐私政策](https://thoughts.teambition.com/share/62215b3f8ecda0004135fa83#title=Sheas_Unlocker_隐私政策)
+2. [使用协议](https://thoughts.teambition.com/share/62215bb80afc380041785103#title=Sheas_Unlocker_使用协议)
 
 ## 下载地址:
-暂无
+Github: [https://github.com/SpaceTimee/Sheas-Unlocker/releases](https://github.com/SpaceTimee/Sheas-Unlocker/releases)
 
 ## 安装方式:
-暂无
+下载 Sheas Unlocker Setup.exe 并双击运行 -> 按照提示设置即可安装
 
 ## 开发者:
 **Space Time**
