@@ -33,7 +33,7 @@ namespace Sheas_Unlocker
 
         private void OutputError(DataReceivedEventArgs e)
         {
-            if (!string.IsNullOrEmpty(e.Data) && !string.IsNullOrWhiteSpace(e.Data))
+            if (!string.IsNullOrEmpty(e.Data) || !string.IsNullOrWhiteSpace(e.Data))
             {
                 IS_SUCCESSFUL = false;
                 MAIN_FORM.Text = "解锁失败";
