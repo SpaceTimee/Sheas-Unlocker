@@ -46,6 +46,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Sheas Unlocker Logo.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Sheas Core">
       <HintPath>C:\Users\Space Time\Desktop\Sheas Core\bin\Release\Sheas Core.dll</HintPath>
     </Reference>
