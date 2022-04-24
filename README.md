@@ -1,4 +1,4 @@
-<h1 align="center">Sheas ⬡ Unlocker</h1>
+<h1 align="center">Sheas ◁ Unlocker</h1>
 <h3 align="center">- Just Unlocker -</h3>
 </br>
 
