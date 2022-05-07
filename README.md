@@ -3,6 +3,8 @@
 </br>
 
 ## 自我介绍:
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FSpaceTimee%2FSheas-Unlocker.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FSpaceTimee%2FSheas-Unlocker?ref=badge_shield)
+
 **Sheas Unlocker**: 一只基于**Winform (.Net5)** 的 Windows 外来文件解锁定工具
 
 适用平台: **Windows**
@@ -30,3 +32,7 @@ Github: [https://github.com/SpaceTimee/Sheas-Unlocker/releases](https://github.c
 **Zeus6_6@163.com**
 
 •ᴗ•
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FSpaceTimee%2FSheas-Unlocker.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FSpaceTimee%2FSheas-Unlocker?ref=badge_large)
