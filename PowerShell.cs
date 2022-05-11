@@ -15,16 +15,8 @@ namespace Sheas_Unlocker
             MAIN_FORM = mainForm;
         }
 
-        public override void Process_OutputDataReceived(object sender, DataReceivedEventArgs e)
-        {
-            OutputError(e);
-        }
-
-        public override void Process_ErrorDataReceived(object sender, DataReceivedEventArgs e)
-        {
-            OutputError(e);
-        }
-
+        public override void Process_OutputDataReceived(object sender, DataReceivedEventArgs e) => OutputError(e);
+        public override void Process_ErrorDataReceived(object sender, DataReceivedEventArgs e) => OutputError(e);
         public override void Process_Exited(object sender, EventArgs e)
         {
             if (IS_SUCCESSFUL)
@@ -33,7 +25,7 @@ namespace Sheas_Unlocker
 
         private void OutputError(DataReceivedEventArgs e)
         {
-            if (!string.IsNullOrEmpty(e.Data) && !string.IsNullOrWhiteSpace(e.Data))
+            if (!string.IsNullOrWhiteSpace(e.Data))
             {
                 IS_SUCCESSFUL = false;
                 MAIN_FORM.Text = "解锁失败";

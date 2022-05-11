@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows10.0.22000.0</TargetFramework>
+    <TargetFramework>net6.0-windows10.0.22000.0</TargetFramework>
     <RootNamespace>Sheas_Unlocker</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
@@ -16,16 +16,17 @@
     <Version>0</Version>
     <Company />
     <PackageId>SpaceTime.Sheas.Unlocker</PackageId>
-    <FileVersion>1.0.1</FileVersion>
-    <AssemblyVersion>1.0.1</AssemblyVersion>
+    <FileVersion>1.0.2</FileVersion>
+    <AssemblyVersion>1.0.2</AssemblyVersion>
     <PackageReleaseNotes>Just Unlocker</PackageReleaseNotes>
-    <PackageTags>tool;unlocker;sheas</PackageTags>
+    <PackageTags>sheas;unlocker;tool</PackageTags>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/SpaceTimee/Sheas-Unlocker</RepositoryUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageProjectUrl>https://github.com/SpaceTimee/Sheas-Unlocker</PackageProjectUrl>
-    <PackageIcon>Sheas Unlocker Logo 384x384.png</PackageIcon>
+    <PackageIcon>Sheas Unlocker Logo.png</PackageIcon>
     <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
+    <ErrorReport>none</ErrorReport>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -43,6 +44,13 @@
     <None Remove=".gitignore" />
     <None Remove="README.md" />
     <None Remove="Sheas Unlocker Logo.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Sheas Unlocker Logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>

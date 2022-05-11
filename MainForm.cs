@@ -6,10 +6,7 @@ namespace Sheas_Unlocker
 {
     internal partial class MainForm : Form
     {
-        internal MainForm()
-        {
-            InitializeComponent();
-        }
+        internal MainForm() => InitializeComponent();
 
         private void UnlockButton_Click(object sender, EventArgs e)
         {
